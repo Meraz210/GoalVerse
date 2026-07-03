@@ -39,6 +39,9 @@ export function Navbar() {
           <span className="font-display text-xl font-bold tracking-normal">
             GoalVerse
           </span>
+          <span className="hidden rounded bg-danger/15 px-2 py-1 text-[10px] font-black uppercase tracking-[0.14em] text-danger sm:inline-flex">
+            Live
+          </span>
         </Link>
 
         <div className="hidden items-center gap-1 lg:flex">
