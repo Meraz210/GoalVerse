@@ -140,3 +140,21 @@ export const highlights: Highlight[] = [
     tag: "Preview",
   },
 ];
+
+export const standings = [
+  { id: "nbr", team: "Northbridge FC", played: 28, won: 19, drawn: 5, lost: 4, gd: 32, points: 62 },
+  { id: "lnc", team: "London City", played: 28, won: 18, drawn: 6, lost: 4, gd: 29, points: 60 },
+  { id: "mdu", team: "Madrid Union", played: 23, won: 14, drawn: 7, lost: 2, gd: 24, points: 49 },
+  { id: "vno", team: "Valencia Norte", played: 23, won: 11, drawn: 6, lost: 6, gd: 12, points: 39 },
+  { id: "rom", team: "Roma Club", played: 21, won: 10, drawn: 4, lost: 7, gd: 8, points: 34 },
+];
+
+export const searchableItems = [
+  { id: "team-nbr", type: "Team", name: "Northbridge FC", subtitle: "Premier League" },
+  { id: "team-lnc", type: "Team", name: "London City", subtitle: "Premier League" },
+  { id: "team-mdu", type: "Team", name: "Madrid Union", subtitle: "LaLiga" },
+  { id: "player-santos", type: "Player", name: "Rafael Santos", subtitle: "Forward, Northbridge FC" },
+  { id: "player-reid", type: "Player", name: "Aaron Reid", subtitle: "Midfielder, London City" },
+  { id: "league-epl", type: "League", name: "Premier League", subtitle: "England" },
+  { id: "league-laliga", type: "League", name: "LaLiga", subtitle: "Spain" },
+];

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { FiActivity, FiArrowRight, FiClock, FiRadio } from "react-icons/fi";
 import type { Match } from "@/types/football";
 import { TeamCrest } from "@/components/home/team-crest";
@@ -97,13 +98,13 @@ export function LiveMatchCenter({ matches }: LiveMatchCenterProps) {
                 </div>
               </div>
             </div>
-            <button
-              type="button"
+            <Link
+              href={`/matches/${match.id}`}
               className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-accent transition hover:text-white"
             >
               Match details
               <FiArrowRight className="size-3.5" aria-hidden="true" />
-            </button>
+            </Link>
           </article>
         ))}
       </div>
