@@ -1,4 +1,10 @@
-import type { Highlight, Match } from "@/types/football";
+import type {
+  Highlight,
+  LeagueProfile,
+  Match,
+  PlayerProfile,
+  TeamProfile,
+} from "@/types/football";
 
 export const matches: Match[] = [
   {
@@ -141,6 +147,111 @@ export const highlights: Highlight[] = [
   },
 ];
 
+export const teams: TeamProfile[] = [
+  {
+    id: "northbridge-fc",
+    name: "Northbridge FC",
+    shortName: "NBR",
+    league: "Premier League",
+    country: "England",
+    stadium: "Northbridge Arena",
+    manager: "Marco Vale",
+    founded: 1899,
+    color: "#29d391",
+    form: ["W", "W", "D", "W", "L"],
+  },
+  {
+    id: "london-city",
+    name: "London City",
+    shortName: "LNC",
+    league: "Premier League",
+    country: "England",
+    stadium: "City Ground",
+    manager: "Julian Cross",
+    founded: 1908,
+    color: "#8aa4ff",
+    form: ["W", "D", "W", "W", "W"],
+  },
+  {
+    id: "madrid-union",
+    name: "Madrid Union",
+    shortName: "MDU",
+    league: "LaLiga",
+    country: "Spain",
+    stadium: "Union Arena",
+    manager: "Diego Rivas",
+    founded: 1914,
+    color: "#ff5b6e",
+    form: ["D", "W", "W", "D", "W"],
+  },
+];
+
+export const players: PlayerProfile[] = [
+  {
+    id: "rafael-santos",
+    name: "Rafael Santos",
+    team: "Northbridge FC",
+    position: "Forward",
+    country: "Brazil",
+    age: 27,
+    goals: 18,
+    assists: 7,
+    rating: 8.2,
+  },
+  {
+    id: "aaron-reid",
+    name: "Aaron Reid",
+    team: "London City",
+    position: "Midfielder",
+    country: "England",
+    age: 24,
+    goals: 6,
+    assists: 12,
+    rating: 7.8,
+  },
+  {
+    id: "diego-silva",
+    name: "Diego Silva",
+    team: "Madrid Union",
+    position: "Goalkeeper",
+    country: "Spain",
+    age: 30,
+    goals: 0,
+    assists: 1,
+    rating: 7.5,
+  },
+];
+
+export const leagues: LeagueProfile[] = [
+  {
+    id: "premier-league",
+    name: "Premier League",
+    country: "England",
+    tier: "Division 1",
+    season: "2026",
+    teams: 20,
+    color: "#29d391",
+  },
+  {
+    id: "laliga",
+    name: "LaLiga",
+    country: "Spain",
+    tier: "Division 1",
+    season: "2026",
+    teams: 20,
+    color: "#ff5b6e",
+  },
+  {
+    id: "serie-a",
+    name: "Serie A",
+    country: "Italy",
+    tier: "Division 1",
+    season: "2026",
+    teams: 20,
+    color: "#f97316",
+  },
+];
+
 export const standings = [
   { id: "nbr", team: "Northbridge FC", played: 28, won: 19, drawn: 5, lost: 4, gd: 32, points: 62 },
   { id: "lnc", team: "London City", played: 28, won: 18, drawn: 6, lost: 4, gd: 29, points: 60 },
@@ -150,11 +261,11 @@ export const standings = [
 ];
 
 export const searchableItems = [
-  { id: "team-nbr", type: "Team", name: "Northbridge FC", subtitle: "Premier League" },
-  { id: "team-lnc", type: "Team", name: "London City", subtitle: "Premier League" },
-  { id: "team-mdu", type: "Team", name: "Madrid Union", subtitle: "LaLiga" },
-  { id: "player-santos", type: "Player", name: "Rafael Santos", subtitle: "Forward, Northbridge FC" },
-  { id: "player-reid", type: "Player", name: "Aaron Reid", subtitle: "Midfielder, London City" },
-  { id: "league-epl", type: "League", name: "Premier League", subtitle: "England" },
-  { id: "league-laliga", type: "League", name: "LaLiga", subtitle: "Spain" },
+  { id: "team-nbr", type: "Team", name: "Northbridge FC", subtitle: "Premier League", href: "/teams/northbridge-fc" },
+  { id: "team-lnc", type: "Team", name: "London City", subtitle: "Premier League", href: "/teams/london-city" },
+  { id: "team-mdu", type: "Team", name: "Madrid Union", subtitle: "LaLiga", href: "/teams/madrid-union" },
+  { id: "player-santos", type: "Player", name: "Rafael Santos", subtitle: "Forward, Northbridge FC", href: "/players/rafael-santos" },
+  { id: "player-reid", type: "Player", name: "Aaron Reid", subtitle: "Midfielder, London City", href: "/players/aaron-reid" },
+  { id: "league-epl", type: "League", name: "Premier League", subtitle: "England", href: "/leagues/premier-league" },
+  { id: "league-laliga", type: "League", name: "LaLiga", subtitle: "Spain", href: "/leagues/laliga" },
 ];

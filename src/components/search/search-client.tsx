@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 import { searchableItems } from "@/lib/mock-football";
 
@@ -32,8 +33,9 @@ export function SearchClient() {
 
       <div className="mt-4 grid gap-3">
         {results.map((item) => (
-          <article
+          <Link
             key={item.id}
+            href={item.href}
             className="rounded border border-border bg-panel-strong p-4"
           >
             <div className="text-xs font-black uppercase tracking-[0.12em] text-accent">
@@ -43,7 +45,7 @@ export function SearchClient() {
               {item.name}
             </h2>
             <p className="mt-1 text-sm text-muted">{item.subtitle}</p>
-          </article>
+          </Link>
         ))}
       </div>
     </div>

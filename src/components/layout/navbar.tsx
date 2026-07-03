@@ -18,6 +18,8 @@ const navItems = [
   { label: "World Cup", href: "/world-cup" },
   { label: "Fixtures", href: "/fixtures" },
   { label: "Leagues", href: "/leagues" },
+  { label: "Teams", href: "/teams" },
+  { label: "Players", href: "/players" },
   { label: "Favorites", href: "/favorites" },
   { label: "About", href: "/about" },
 ];

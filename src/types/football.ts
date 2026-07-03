@@ -37,3 +37,38 @@ export type Highlight = {
   time: string;
   tag: string;
 };
+
+export type TeamProfile = {
+  id: string;
+  name: string;
+  shortName: string;
+  league: string;
+  country: string;
+  stadium: string;
+  manager: string;
+  founded: number;
+  color: string;
+  form: string[];
+};
+
+export type PlayerProfile = {
+  id: string;
+  name: string;
+  team: string;
+  position: string;
+  country: string;
+  age: number;
+  goals: number;
+  assists: number;
+  rating: number;
+};
+
+export type LeagueProfile = {
+  id: string;
+  name: string;
+  country: string;
+  tier: string;
+  season: string;
+  teams: number;
+  color: string;
+};

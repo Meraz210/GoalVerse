@@ -7,6 +7,7 @@ const footerLinks = [
   { label: "World Cup", href: "/world-cup" },
   { label: "Fixtures", href: "/fixtures" },
   { label: "Leagues", href: "/leagues" },
+  { label: "Teams", href: "/teams" },
   { label: "Search", href: "/search" },
 ];
 
