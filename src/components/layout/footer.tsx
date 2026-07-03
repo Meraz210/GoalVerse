@@ -3,6 +3,7 @@ import { FiActivity, FiGithub, FiHeart } from "react-icons/fi";
 
 const footerLinks = [
   { label: "Live Matches", href: "/live" },
+  { label: "Watch", href: "/watch" },
   { label: "World Cup", href: "/world-cup" },
   { label: "Fixtures", href: "/fixtures" },
   { label: "Leagues", href: "/leagues" },

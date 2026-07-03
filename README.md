@@ -24,6 +24,7 @@ Add your football API configuration:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
+SERVER_URL=https://your-backend.example.com
 FOOTBALL_API_BASE_URL=https://api.example.com
 FOOTBALL_API_KEY=your_api_key_here
 ```
@@ -72,5 +73,9 @@ src/
 
 Use server-only variables for secret API keys whenever possible. Only expose
 values with `NEXT_PUBLIC_` when they are safe to ship to the browser.
+
+`SERVER_URL` enables the catch-all proxy at `/api/[...path]`. A licensed channel
+backend can return records with `_id`, `name`, `channelsNumber`, `logo`,
+`groupTitle`, and `channelUrl`; GoalVerse maps those fields for the Watch page.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
