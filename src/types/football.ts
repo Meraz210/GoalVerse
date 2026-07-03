@@ -28,6 +28,8 @@ export type Match = {
   events: string[];
 };
 
+export type WorldCupSource = "api" | "fallback";
+
 export type Highlight = {
   id: string;
   title: string;

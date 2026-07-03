@@ -14,6 +14,7 @@ import {
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Live", href: "/live" },
+  { label: "World Cup", href: "/world-cup" },
   { label: "Fixtures", href: "/fixtures" },
   { label: "Leagues", href: "/leagues" },
   { label: "Favorites", href: "/favorites" },
